@@ -541,7 +541,7 @@ button:active {
     width: 100%;
     max-width: 1200px;
     height: fit-content;
-    background-color: #032910;
+    background-color: #0c3529;
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -573,6 +573,7 @@ button:active {
 
 .player-thumb p{
     color: white;
+    padding-right: 10px;
 }
 
 input[type= 'range']{
@@ -598,5 +599,31 @@ input[type= 'range']{
     color: #fff;
 }
 
+
+@media (max-width: 1024px) {
+    .player-image{
+        width: 100%;
+        padding-top: 100%;
+        background-color: #fff;
+        /* margin-right: 30px;  */
+    }
+}
+
+@media (max-width: 420px) {
+    .player-set i{
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .player-set{
+        padding-bottom: 3px;
+    }
+
+    .player-control{
+        padding: 2px;
+    }
+
+
+}
 
 
