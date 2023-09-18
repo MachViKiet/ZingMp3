@@ -505,3 +505,22 @@ button:active {
        transform: translateX(-55px) translateY(10px) rotate(-45deg);
     }
 }
+
+.inner_background.active{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+}
+
+#siteBar.active {
+    display: block !important;
+    position: fixed;
+    width: 30%;
+    min-width: 220px;
+}
+
+@media (min-width : 1024) {
+
+}
