@@ -12,9 +12,7 @@ function openPlayer(id) {
         singer: id.querySelector('.card-desc').innerHTML,
         audio: id.querySelector('.card-title').href
     }
-    console.log('----------')
-    console.log(card_inf.image)
-    console.log(card_inf.audio)
+
     field.innerHTML += `
     <div class="container row">
     <div class="close-btn">
@@ -30,8 +28,8 @@ function openPlayer(id) {
                 </div>
                 <div class="col l-2 m-2 s-3">
                     <div class="player-inf">
-                        <h1>${card_inf.name}</h1>
-                        <p>${card_inf.singer}</p>
+                        <h1 title= "${card_inf.name}">${card_inf.name}</h1>
+                        <p title="${card_inf.name}">${card_inf.singer}</p>
                     </div>
                 </div>
                 <div class="col l-9  m-9  s-9">
@@ -70,8 +68,6 @@ function playlist(config, field) {
     // render playlist to html
 
 
-    console.log(config)
-
     var container = $(field.card_field)
     container.innerHTML = ''
 
@@ -97,8 +93,8 @@ function playlist(config, field) {
                 }
 
                 card_container.innerHTML += `
-                <button class="card card_js"  "  onclick = "openPlayer(this)">
-                <div title="${card_inf.image}" class="card-img image image-s-3 card-img_js
+                <button title = "${card_inf.name} - ${card_inf.singer}" class="card card_js"  "  onclick = "openPlayer(this)">
+                <div class="card-img image image-s-3 card-img_js
                 "style = 'background: url(${card_inf.image});
                 background-position: center;
                 background-size: contain;
