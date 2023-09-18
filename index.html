@@ -22,7 +22,7 @@
 
     <div id="main-web">
         <div class="row no-gutters">
-            <div id = 'siteBar' class="col l-2 m-0 s-0">
+            <div id='siteBar' class="col l-2 m-0 s-0">
                 <div class="siteBar">
                     <div class="siteBar__header header border-bottom">
                         <div class="site-image image image-s-1"></div>
@@ -226,7 +226,6 @@
                                     </div>
                                 </div>
 
-
                             </div>
                         </div>
                         <div class="col l-4 l-2 m-0 s-0">
@@ -313,6 +312,19 @@
                     </div>
                 </div>
             </div>
+
+            <div class="player-field">
+                <div class="container row">
+                    <div class="col l-1 m-1 s-2">
+                        <div class="player-image"></div>
+                    </div>
+                    <div class="col l-11  m-11  s-9">
+                        <div class="player-control">
+                            <input type="range" name="" id="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -324,18 +336,18 @@
         function resize() {
             var w = window.innerWidth;
             var h = window.innerHeight;
-           if(w > 1113){
-            document.querySelector('#inner-background_btn').checked = false;
-           }
-            
+            if (w > 1113) {
+                document.querySelector('#inner-background_btn').checked = false;
+            }
+
         }
-         
+
         // Gắn hàm để lắng nghe sự kiện thay đổi kích thước màn hình
         window.addEventListener("resize", resize);
-        document.querySelector('#inner-background_btn').onchange =  () => {
+        document.querySelector('#inner-background_btn').onchange = () => {
             nav_button.classList.toggle('active')
             nav_bg.classList.toggle('active')
-            siteBar.classList.toggle('active')    
+            siteBar.classList.toggle('active')
         };
     </script>
 </body>
