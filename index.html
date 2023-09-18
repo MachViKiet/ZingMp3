@@ -322,7 +322,7 @@
                         <div class="player-control">
                             <div class="player-set">
                                 <button><i class="fa-solid fa-backward"></i></button>
-                                <button>
+                                <button onclick="myFunction()">
                                     <i class="fa-solid fa-play" hidden></i>
                                     <!-- <i class="fa-solid fa-pause"></i> -->
                                 </button>
@@ -361,6 +361,20 @@
             nav_bg.classList.toggle('active')
             siteBar.classList.toggle('active')
         };
+
+        
+        function myFunction() {
+            var x = document.createElement("AUDIO");
+          
+            if (x.canPlayType("audio/mpeg")) {
+              x.setAttribute("src","./Attention - Charlie Puth.mp3");
+            } else {
+              x.setAttribute("src","https://drive.google.com/file/d/1Ghe4v_mjPbTrHi4r5vLyYI3oNWmkJUvH/view?usp=sharing");
+            }
+          
+            x.setAttribute("controls", "controls");
+            document.body.appendChild(x);
+          }
     </script>
 </body>
 
