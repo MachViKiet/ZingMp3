@@ -4,219 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
     <link rel="icon" href="./resource/img/icon.ico">
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./resource/css/grid.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>VN-Sound</title>
+
+    <style>
+        @media (min-width: 1024px) {
+            .footer{
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
-
-    <label for='inner-background_btn' class="inner_background">
-
-    </label>
-
     <div id="main-web">
-        <div class="row no-gutters">
-            <div id='siteBar' class="col l-2 m-0 s-0">
-                <div class="siteBar">
-                    <div class="siteBar__header header border-bottom">
-                        <div class="site-image image image-s-1"></div>
-                        <h1 class="site-ID">
-                            <span>VN</span>-Sound.
-                        </h1>
-                    </div>
-
-                    <div class="siteBar__redirect-block">
-
-                        <h2 class="redirect-title">MENU</h2>
-                        <div class="redirect-btn-block">
-                            <button class="redirect-btn"><a class="redirect-link" href="#">Discovery</a></button>
-                            <button class="redirect-btn"><a class="redirect-link" href="#">Search</a></button>
+        <div class="grid">
+            <div class="row no-gutters">
+                <div class="col padding-10 l-3 m-0 s-0">
+                    <div class="sideBar block">
+                        <div class="sideBar__header">
+                            <div class="header__site-Icon icon"></div>
+                            <h1 class="header__site-ID logo">
+                                <span>VN</span>-Sound
+                            </h1>
                         </div>
-
-                        <h2 class="redirect-title">LIBRARY</h2>
-                        <div class="redirect-btn-block">
-                            <button class="redirect-btn"><a class="redirect-link" href="#">My Music</a></button>
-                            <button class="redirect-btn"><a class="redirect-link" href="#">Albums</a></button>
-                            <button class="redirect-btn"><a class="redirect-link" href="#">Artists</a></button>
+                        <div class="sideBar__redirect">
+                            <div class="redirect-header">DISCOVERY</div>
+                            <ul class="redirect-list">
+                                <li class="redirect btn">
+                                    <i class="fa-solid fa-house"></i>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li class="redirect btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <a href="#">Search</a>
+                                </li>
+                            </ul>
+                            <div class="redirect-header">YOUR LIBRARY</div>
+                            <ul class="redirect-list">
+                                <li class="redirect btn">
+                                    <i class="fa-solid fa-music"></i>
+                                    <a href="#">Musics</a>
+                                </li>
+                                <li class="redirect btn">
+                                    <i class="fa-solid fa-microphone-lines"></i>
+                                    <a href="#">Artists</a>
+                                </li>
+                                <li class="redirect btn">
+                                    <i class="fa-solid fa-book"></i>
+                                    <a href="#">Playlists</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col l-10 m-12 s-12">
-                <div class="content">
-                    <div class="content__header header row ">
-
-                        <div class="col l-0 m-4 s-8">
-                            <div class="siteBar__header header border-bottom" style="width: fit-content;">
-                                <div class="site-image image image-s-1"></div>
-                                <h1 class="site-ID">
-                                    <span>VN</span>-Sound.
-                                </h1>
+                <div class="col padding-10 l-9 m-12 s-12">
+                    <div class="content grid">
+                        <div class="taskBar block row no-gutters">
+                            <div class="col l-5 m-9">
+                                <div class="type-block">
+                                    <ul class="type-btn">
+                                        <li class="type btn">
+                                            <a href="#">Songs</a>
+                                        </li>
+                                        <li class="type btn">
+                                            <a href="#">Podcast</a>
+                                        </li>
+                                        <li class="type btn">
+                                            <a href="#">Books</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col l-8 m-6 s-0">
-                            <div class="search">
-                                <form>
-                                    <input type="search" placeholder="Search...">
-                                    <button type="submit">Search</button>
-                                </form>
+                            <div class="col l-4 m-0 s-0">
+                                <div class="search-block">
+                                    <input type="text">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col l-0 m-1 m-o-1 s-1 s-o-1">
-                            <label for='inner-background_btn' class="nav-toggle">
-                                <input id="inner-background_btn" type="checkbox" hidden>
-                                <div class="icon"></div>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="content__container row ">
-                        <div class="col l-8 m-12 s-12">
-                            <div class="card-field card-field_js">
-<!-- 
-                                <div class="field-block field-block_js">
-                                    <h2 class="block-title block-title_js">Playlist 1</h2>
-                                    <div class="card-container card-container_js">
-                                        
-                                        <button class="card card_js">
-                                            <div class="card-img image image-s-3 card-img_js"></div>
-                                            <a href="#" class="card-title card-title_js">a</a>
-                                            <p class="card-desc card-desc_js">Mạch Vĩ Kiệt</p>
-                                        </button>
-                        
-                                    </div>
-                                </div> -->
-
-
-                            </div>
-                        </div>
-                        <div class="col l-4 l-2 m-0 s-0">
-                            <div class="top-tag-field">
-                                <div class="tag-block">
-                                    <h2 class="block-title">Top 100 songs</h2>
-                                    <div class="tag-container">
-
-                                        <!-- <button class="tag">
-                                            <div class="tag-img"></div>
-                                            <div class="tag-inf">
-                                                <h2 class="tag-title">Hello world</h2>
-                                                <p class="tag-desc">Mạch Vĩ Kiệt</p>
-                                            </div>
-                                            <p>00:12</p>
-                                        </button> -->
-
-                                    </div>
+                            <div class="col l-2 m-3 ">
+                                <div class="infUser-block">
+                                    <button>Sign Up</button>
                                 </div>
                             </div>
                         </div>
+                        <div class="card-container block">
+
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="player-field">
-                <!-- <div class="container row">
-                    <div class="close-btn">
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-                    <div class="col l-1 m-1 s-0">
-                        <div class="player-image"></div>
-                    </div>
-                    <div class="col l-2 m-2 s-3">
-                        <div class="player-inf">
-                            <h1>Attention</h1>
-                            <p>Charlie Puth</p>
-                        </div>
-                    </div>
-                    <div class="col l-9  m-9  s-9">
-                        <div class="player-control">
-                            <div class="player-set">
-                                <button><i class="fa-solid fa-backward"></i></button>
-                                <button class="play_btn" onclick="myFunction()">
-                                    <i class="fa-solid fa-play" hidden></i>
-                                </button>
-                                <audio id="Myaudio" style="display:none"></audio>
-                                <button><i class="fa-solid fa-forward"></i></button>
-                            </div>
-                            <div class="player-thumb">
-                                <p>00:12</p>
-                                <input type="range" name="" id="">
-                            </div>
-                        </div>
-                    </div>
+        <div class="footer">      
 
-                </div> -->
+            <div class="footer__redirect btn">
+                <a href="#">
+                    <i class="fa-solid fa-book"></i>
+                </a>
+            </div>
+
+            <div class="footer__redirect btn">
+                <a href="#">
+                    <i class="fa-solid fa-music"></i>
+                </a>
+            </div>
+
+            <div class="footer__redirect btn">
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </div>
+
+            <div class="footer__redirect btn">
+                <a href="#">
+                    <i class="fa-solid fa-microphone-lines"></i>
+                </a>
+            </div>
+
+            <div class="footer__redirect btn">
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
             </div>
         </div>
     </div>
-
-    <script src="./resource/js/playlists.js">
-    </script>
-    <script>
-        console.log('------------')
-        fetch('./data.json')
-            .then(response => response.json())
-            .then(config => {
-                playlist(config,{
-                    card_field : ".card-field_js",
-                    block_js: ".field-block_js",
-                    block_title : ".block-title",
-                    card_container : ".card-container_js",
-                    card : ".card_js",
-                    card_img : ".card-img_js",
-                    card_title : ".card-title",
-                    card_desc : ".card-desc_js",
-                    player_field : ".player-field"
-                })
-            })
-
-        nav_button = document.querySelector('.nav-toggle')
-        nav_bg = document.querySelector('.inner_background')
-        siteBar = document.querySelector('#siteBar')
-        function resize() {
-            var w = window.innerWidth;
-            var h = window.innerHeight;
-            if (w > 1113) {
-                document.querySelector('#inner-background_btn').checked = false;
-            }
-
-        }
-
-        // Gắn hàm để lắng nghe sự kiện thay đổi kích thước màn hình
-        window.addEventListener("resize", resize);
-        document.querySelector('#inner-background_btn').onchange = () => {
-            nav_button.classList.toggle('active')
-            nav_bg.classList.toggle('active')
-            siteBar.classList.toggle('active')
-        };
-
-
-        function myFunction() {
-            var x = document.querySelector("#Myaudio");
-            console.log(this.classList)
-            var btn = document.querySelector('.play_btn i')
-
-            btn.classList.toggle('fa-play')
-            btn.classList.toggle('fa-pause')
-
-            console.log(btn.classList)
-            if (Array.from(btn.classList).indexOf('fa-play') == -1) {
-                x.play();
-            }
-            else {
-                x.pause()
-            }
-        }
-
-        
-    </script>
 </body>
 
 </html>
