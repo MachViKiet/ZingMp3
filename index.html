@@ -14,7 +14,7 @@
 
     <style>
         @media (min-width: 1024px) {
-            .sideBar-footer{
+            .sideBar-footer {
                 display: none;
             }
         }
@@ -95,17 +95,55 @@
                             </div>
                         </div>
                         <div class="card-container block">
-                            
+                            <div class="welcome-block">
+                                <h1 title=">Welcome to VN-Sound" class="block__heading">Welcome to <<i class="logo">VN-<span>Sound</span></i>>
+                                </h1>
+                                <div class="grid">
+                                    <div class="row no-gutters">
+                                        <div class="col padding-5 l-4 m-6 s-12">
+                                            <div class="tag">
+                                                <div class="tag-image"></div>
+                                                <div class="tag-desc">Mạch Vĩ Kiệt 21CLC01</div>
+                                                <div class="tag-icon"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col padding-5 l-4 m-6 s-12">
+                                            <div class="tag">
+                                                <div class="tag-image"></div>
+                                                <div class="tag-desc">Mạch Vĩ Kiệt</div>
+                                                <div class="tag-icon"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col padding-5 l-4 m-6 s-12">
+                                            <div class="tag">
+                                                <div class="tag-image"></div>
+                                                <div class="tag-desc">Mạch Vĩ Kiệt</div>
+                                                <div class="tag-icon"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col padding-5 l-4 m-6 s-12">
+                                            <div class="tag">
+                                                <div class="tag-image"></div>
+                                                <div class="tag-desc">Mạch Vĩ Kiệt</div>
+                                                <div class="tag-icon"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="footer">    
-            
+        <div class="footer">
+
             <div class="audio-player">
-            
+
             </div>
 
             <div class="sideBar-footer">
@@ -114,25 +152,25 @@
                         <i class="fa-solid fa-book"></i>
                     </a>
                 </div>
-    
+
                 <div class="footer__redirect btn">
                     <a href="#">
                         <i class="fa-solid fa-music"></i>
                     </a>
                 </div>
-    
-                <div class="footer__redirect btn active">
+
+                <div class="footer__redirect btn">
                     <a href="#">
                         <i class="fa-solid fa-house"></i>
                     </a>
                 </div>
-    
+
                 <div class="footer__redirect btn">
                     <a href="#">
                         <i class="fa-solid fa-microphone-lines"></i>
                     </a>
                 </div>
-    
+
                 <div class="footer__redirect btn">
                     <a href="#">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -142,6 +180,18 @@
 
         </div>
     </div>
+
+    <script>
+        $ = document.querySelector.bind(document)
+        $$ = document.querySelectorAll.bind(document)
+
+        $$('.footer__redirect').forEach((btn)=>{
+            btn.onmouseover = () =>{
+                btn.classList.toggle("active")
+            }
+        })
+
+    </script>
 </body>
 
 </html>
