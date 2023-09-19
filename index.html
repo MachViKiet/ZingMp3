@@ -96,7 +96,8 @@
                         </div>
                         <div class="card-container block">
                             <div class="welcome-block">
-                                <h1 title=">Welcome to VN-Sound" class="block__heading">Welcome to <<i class="logo">VN-<span>Sound</span></i>>
+                                <h1 title=">Welcome to VN-Sound" class="block__heading">Welcome to <<i class="logo">
+                                        VN-<span>Sound</span></i>>
                                 </h1>
                                 <div class="grid">
                                     <div class="row no-gutters">
@@ -142,8 +143,38 @@
 
         <div class="footer">
 
-            <div class="audio-player">
-
+            <div class="audio-player grid">
+                <div class="tag row-no-gutters">
+                    <div class="col l-1 m-1">
+                        <div class="tag-image"></div>
+                    </div>
+                    <div class="col l-3 m-3">
+                        <div class="tag-inf">
+                            <div class="tag-desc">Mạch Vĩ Kiệt 21CLC01</div>
+                            <div class="tag-artist">aaaaaaaaaaaaaaa</div>
+                        </div>
+                    </div>
+                    <div class="col l-6 l-o-1 m-6 m-o-1 s-0">
+                        <div class="audio-setting">
+                            <button>
+                                <i class="fa-solid fa-backward"></i>
+                            </button> 
+                            <button>
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <button>
+                                <i class="fa-solid fa-forward"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col l-1 m-1 s-1 s-0">
+                        <div class="tag-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <input type="range" min="0" max="100">
+                <audio src="#" hidden></audio>
             </div>
 
             <div class="sideBar-footer">
@@ -185,9 +216,21 @@
         $ = document.querySelector.bind(document)
         $$ = document.querySelectorAll.bind(document)
 
-        $$('.footer__redirect').forEach((btn)=>{
-            btn.onmouseover = () =>{
+        $$('.footer__redirect').forEach((btn) => {
+            btn.onmouseover = () => {
                 btn.classList.toggle("active")
+            }
+        })
+
+        $$('.card-container .tag').forEach((btn) => {
+            btn.ondblclick = () => {
+                console.log($('.audio-player'))
+                $('.audio-player').style.display = "block"
+            }
+
+            btn.onclick = () => {
+                console.log($('.audio-player'))
+                $('.audio-player').style.display = "none"
             }
         })
 
