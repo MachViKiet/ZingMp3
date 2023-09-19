@@ -154,7 +154,7 @@
                             <div class="tag-artist">aaaaaaaaaaaaaaa</div>
                         </div>
                     </div>
-                    <div class="col l-6 l-o-1 m-6 m-o-1 s-0">
+                    <div class="col l-6 l-o-1 m-5 m-o-1 s-0">
                         <div class="audio-setting">
                             <button>
                                 <i class="fa-solid fa-backward"></i>
@@ -167,11 +167,18 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col l-1 m-1 s-1 s-0">
-                        <div class="tag-icon">
-                            <i class="fa-regular fa-heart"></i>
+                    <div class="col l-1 m-2 m-o-0 s-2 s-o-2">
+                        <div class="tag-btn">
+                            <div class="tag-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+    
+                            <div class="tag-close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
                         </div>
                     </div>
+
                 </div>
                 <input type="range" min="0" max="100">
                 <audio src="#" hidden></audio>
@@ -207,6 +214,7 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                 </div>
+
             </div>
 
         </div>
@@ -223,17 +231,21 @@
         })
 
         $$('.card-container .tag').forEach((btn) => {
-            btn.ondblclick = () => {
-                console.log($('.audio-player'))
-                $('.audio-player').style.display = "block"
-            }
-
             btn.onclick = () => {
-                console.log($('.audio-player'))
-                $('.audio-player').style.display = "none"
+                // hiển thị đúng playlist cần
+                $('.audio-player').style.display = "block"
             }
         })
 
+        $('.tag-close').onclick = ()=>{
+            $('.audio-player').style.display = "none"
+        }
+
+
+
+        $('.infUser-block button').onclick = ()=>{
+            $('body').classList.toggle('dark-mode')
+        }
     </script>
 </body>
 
