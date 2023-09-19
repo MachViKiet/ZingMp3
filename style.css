@@ -256,10 +256,11 @@ a{
 
 .sideBar-footer{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: #343a40;
     height: 60px;
+    padding: 20px;
 }
 
 .sideBar-footer i{
