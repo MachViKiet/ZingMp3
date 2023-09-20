@@ -21,7 +21,7 @@
     </style>
 </head>
 
-<body>
+<body class="dark-mode">
     <div id="main-web">
         <div class="grid">
             <div class="row no-gutters">
@@ -96,8 +96,8 @@
                         </div>
                         <div class="card-container block">
                             <div class="welcome-block">
-                                <h1 title=">Welcome to VN-Sound" class="block__heading">Welcome to <<i class="logo">
-                                        VN-<span>Sound</span></i>>
+                                <h1 title=">Welcome to VN-Sound" class="block__heading">Welcome to <i class="logo">
+                                        VN-<span>Sound</span></i>
                                 </h1>
                                 <div class="grid">
                                     <div class="row no-gutters">
@@ -135,6 +135,54 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="welcome-block">
+                                <h1 title=">Welcome to VN-Sound" class="block__heading">Welcome to
+                                    <i class="logo">VN-<span>Sound</span></i>
+                                </h1>
+                                <div class="grid">
+                                    <div class="row no-gutters">
+                                        <div class="col padding-5 l-4 m-6 s-12">
+                                            <div class="tag">
+                                                <div class="tag-image"></div>
+                                                <div class="tag-desc">Mạch Vĩ Kiệt 21CLC01</div>
+                                                <div class="tag-icon"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col padding-5 l-4 m-6 s-12">
+                                            <div class="tag">
+                                                <div class="tag-image"></div>
+                                                <div class="tag-desc">Mạch Vĩ Kiệt</div>
+                                                <div class="tag-icon"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col padding-5 l-4 m-6 s-12">
+                                            <div class="tag">
+                                                <div class="tag-image"></div>
+                                                <div class="tag-desc">Mạch Vĩ Kiệt</div>
+                                                <div class="tag-icon"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col padding-5 l-4 m-6 s-12">
+                                            <div class="tag">
+                                                <div class="tag-image"></div>
+                                                <div class="tag-desc">Mạch Vĩ Kiệt</div>
+                                                <div class="tag-icon"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card-footer">
+                                khúc này để thông tin bla bla bla
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -143,40 +191,46 @@
 
         <div class="footer">
 
-            <div class="audio-player grid">
-                <div class="tag row-no-gutters">
-                    <div class="col l-1 m-1">
+            <div class="audio-player">
+                <div class="tag">
+
+                    <!-- tag music  -->
+                    <div class="audio-inf">
                         <div class="tag-image"></div>
-                    </div>
-                    <div class="col l-3 m-3">
                         <div class="tag-inf">
                             <div class="tag-desc">Mạch Vĩ Kiệt 21CLC01</div>
                             <div class="tag-artist">aaaaaaaaaaaaaaa</div>
                         </div>
                     </div>
-                    <div class="col l-6 l-o-1 m-5 m-o-1 s-0">
-                        <div class="audio-setting">
-                            <button>
-                                <i class="fa-solid fa-backward"></i>
-                            </button> 
-                            <button>
-                                <i class="fa-solid fa-play"></i>
-                            </button>
-                            <button>
-                                <i class="fa-solid fa-forward"></i>
-                            </button>
-                        </div>
+                    <!--  -->
+
+                    <!-- PLayer -->
+                    <div class="audio-setting">
+                        <button class="btn">
+                            <i class="fa-solid fa-backward"></i>
+                        </button>
+                        <button class="play-pause btn">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        <button class="btn">
+                            <i class="fa-solid fa-forward"></i>
+                        </button>
                     </div>
-                    <div class="col l-1 m-2 m-o-0 s-2 s-o-2">
-                        <div class="tag-btn">
-                            <div class="tag-icon">
-                                <i class="fa-regular fa-heart"></i>
-                            </div>
-    
-                            <div class="tag-close">
-                                <i class="fa-solid fa-xmark"></i>
-                            </div>
-                        </div>
+                    <!--  -->
+
+                    <button class="play-pause btn">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+
+                    <div class="tag-btn">
+                        <button class="tag-like btn">
+                            <!-- <i class="fa-regular fa-heart"></i> -->
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+
+                        <button class="tag-close btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
                     </div>
 
                 </div>
@@ -237,15 +291,27 @@
             }
         })
 
-        $('.tag-close').onclick = ()=>{
+        $('.tag-close').onclick = () => {
             $('.audio-player').style.display = "none"
         }
 
+        $('.tag-like').onclick = (e) => {
+            e.target.classList.toggle('fa-solid');
+            e.target.classList.toggle('fa-regular');
+        }
 
+        $$('.play-pause i').forEach((btn) => {
+            btn.onclick = (e) => {
+                e.target.classList.toggle('fa-pause')
+                e.target.classList.toggle('fa-play')
+            }
+        })
 
-        $('.infUser-block button').onclick = ()=>{
+        $('.infUser-block button').onclick = () => {
             $('body').classList.toggle('dark-mode')
         }
+
+
     </script>
 </body>
 
