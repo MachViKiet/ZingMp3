@@ -9,7 +9,7 @@
     --background-main: rgb(23, 15, 35);
     --background-sideBar: rgb(35, 27, 46);
     --background-color-button: rgb(48, 41, 56);
-    --background-color-button-2 : #9b4de0;
+    --background-color-button-2: #9b4de0;
 
     --color-logo: #fff;
     --color-logo-1: rgb(244, 113, 162);
@@ -203,7 +203,7 @@
     width: 30%;
     height: 100%;
     max-width: 100px;
-    
+
 }
 
 .download-block button {
@@ -277,7 +277,7 @@
     animation: FadeIn ease 2;
 }
 
-.content-container .slider .poster .xl-4 {
+.xl-4 {
     flex: 0 0 calc(100%/3);
     max-width: calc(100%/3);
 }
@@ -295,11 +295,11 @@
     box-shadow: 1px 1px 1px #ffffff79;
 }
 
-.slider .poster img:hover{
+.slider .poster img:hover {
     /* opacity: 1.5; */
 }
 
-.slider button{
+.slider button {
     position: absolute;
     font-size: 30px;
 
@@ -318,40 +318,40 @@
     opacity: 0;
 }
 
-.slider button:nth-child(1){
+.slider button:nth-child(1) {
     left: 0px;
 }
 
-.slider button:nth-child(2){
+.slider button:nth-child(2) {
     right: 0px;
 }
 
-.slider button:hover{
+.slider button:hover {
     /* display: flex; */
     opacity: 1;
 }
 
-.slider button:active{
+.slider button:active {
     transform: scale(0.9);
 }
 
-.block{
+.block {
     padding-bottom: 20px;
     width: 100%;
 }
 
-.content .new-publish{
+.content .new-publish {
     margin-top: 48px;
     width: 100%;
     height: fit-content;
 }
 
-.content .block-title{
+.content .block-title {
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.content .block-btn{
+.content .block-btn {
     display: flex;
     align-items: center;
     width: fit-content;
@@ -360,7 +360,7 @@
     width: 100%;
 }
 
-.content .new-publish button{
+.content .new-publish button {
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 12px;
@@ -370,45 +370,46 @@
     border: none;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 
 
-button:active{
+button:active {
     transform: scale(0.9);
 }
 
-.content .new-publish button:hover{
+.content .new-publish button:hover {
     cursor: pointer;
 }
 
-.content .new-publish button.active{
+.content .new-publish button.active {
     background-color: var(--background-color-button-2);
 }
 
-.content .new-publish .block-media{
+.content .new-publish .block-media {
     width: 100%;
 }
 
-.card-music{
+.card-music {
     display: flex;
     align-items: center;
     padding: 10px;
     width: 100%;
 }
 
-.card-music__img{
+.card-music__img {
     width: 60px;
     height: 60px;
     border-radius: 10%;
     background-color: #fff;
 
 }
+
 .inf-title,
 .inf-artist,
-.inf-desc{
+.inf-desc {
     display: block;
     font-size: 14px;
     font-weight: 800;
@@ -417,23 +418,23 @@ button:active{
 }
 
 .inf-artist,
-.inf-desc{
+.inf-desc {
     font-weight: 100;
     font-size: 12px;
     color: #aaaaaa;
 }
 
-.album .block-title{
+.album .block-title {
     margin: 0;
 }
 
-.card-album{
+.card-album {
     display: block;
     width: 210px;
 }
 
 
-.card-album__img{
+.card-album__img {
     width: 210px;
     height: 210px;
     background-color: #fff;
@@ -441,50 +442,60 @@ button:active{
     margin-bottom: 10px;
 }
 
-.card-album__inf .inf-desc{
+.card-album__inf .inf-desc {
     width: 100%;
     text-align: center;
     max-width: 100%;
 }
 
 
-.getAll{
+.getAll {
     display: block;
     cursor: pointer;
 }
 
 
 
-.getAll:hover{
+.getAll:hover {
     text-decoration: underline;
 }
 
-.row{
+.row {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.col{
+.col {}
 
-}
-
-.col.xl-4{
-    flex : 0 0 calc((100%/3));
+.col.xl-4 {
+    flex: 0 0 calc((100%/3));
     max-width: calc((100%/3));
 }
 
-.col.xl-3{
-    flex : 0 0 calc((100%/4));
+.col.xl-3 {
+    flex: 0 0 calc((100%/4));
     max-width: calc((100%/4));
 }
 
-.content .footer{
+.content .footer {
     width: 100%;
     min-height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.bg-blur {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #00000097;
+    z-index: 2;
+}
+
+.bg-blur {
+    display: none;
 }
 
 
@@ -500,9 +511,147 @@ button:active{
     }
 }
 
+.siderBar-icon {
+    width: fit-content;
+    position: absolute;
+    z-index: 1;
+
+    display: flex;
+    flex-flow: column;
+
+    justify-content: space-between;
+    padding: var(--height-header) 0;
+    /* background-color: #000; */
+}
+
+.siderBar-icon a {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.siderBar-icon label {
+    background-color: transparent;
+    color: var(--color-text);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 50%;
+}
+
+
 @media (max-width: 1470px) {
-    .sideBar{
+
+    #main-web {
+        /* display: block; */
+        position: relative;
+    }
+
+    .sideBar {
+        width: 280px;
+        z-index: 2;
+        position: absolute;
+        display: none;
+    }
+
+    .sideBar.active,
+    .bg-blur.active {
+        display: block;
+    }
+}
+
+@media (max-width : 1024px) {
+    .col.l-6 {
+        flex: 0 0 calc((100%/2));
+        max-width: calc((100%/2));
+    }
+
+    .col.l-0 {
+        display: none;
+    }
+
+    .col.l-4 {
+        flex: 0 0 calc((100%/3));
+        max-width: calc((100%/3));
+    }
+
+    .download-block {
         display: none;
     }
 }
 
+@media (max-width : 780px) {
+    .col.m-0 {
+        display: none;
+    }
+
+    .col.m-12 {
+        flex: 0 0 calc((100%/1));
+        max-width: calc((100%/1));
+    }
+
+    .col.m-6 {
+        flex: 0 0 calc((100%/2));
+        max-width: calc((100%/2));
+    }
+
+    .col.m-0 {
+        display: none;
+    }
+
+    .col.m-4 {
+        flex: 0 0 calc((100%/3));
+        max-width: calc((100%/3));
+    }
+
+    .card-album {
+        display: block;
+        width: 180px;
+    }
+
+    .card-album__img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .col.s-0 {
+        display: none;
+    }
+
+    .col.s-12 {
+        flex: 0 0 calc((100%/1));
+        max-width: calc((100%/1));
+    }
+
+    .col.s-6 {
+        flex: 0 0 calc((100%/2));
+        max-width: calc((100%/2));
+    }
+
+    .col.s-0 {
+        display: none;
+    }
+
+    .col.s-4 {
+        flex: 0 0 calc((100%/3));
+        max-width: calc((100%/3));
+    }
+
+    .toolBar-left {
+        width: fit-content;
+        min-width: fit-content;
+    }
+
+    .toolBar-left .search-block {
+        display: none;
+    }
+
+    .toolBar-right {
+        width: 40%;
+        max-width: 100px;
+    }
+}
