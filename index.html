@@ -199,8 +199,7 @@
                                     <div class="inf-desc">Hôm qua</div>
                                 </div>
                                 <div class="card-music__emotion">
-                                    <!-- <i class="fa-regular fa-heart"></i> -->
-                                    <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                                    <button onclick="emoji_love(this)"><i class="fa-solid fa-heart" ></i></button>
                                 </div>
                             </div>
                         </div>
@@ -214,7 +213,7 @@
                                     <div class="inf-desc">Hôm qua</div>
                                 </div>
                                 <div class="card-music__emotion">
-                                    <i class="fa-regular fa-heart"></i>
+                                    <button onclick="emoji_love(this)"><i class="fa-regular fa-heart"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -228,7 +227,7 @@
                                     <div class="inf-desc">Hôm qua</div>
                                 </div>
                                 <div class="card-music__emotion">
-                                    <i class="fa-regular fa-heart"></i>
+                                    <button onclick="emoji_love(this)"><i class="fa-regular fa-heart"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -242,7 +241,7 @@
                                     <div class="inf-desc">Hôm qua</div>
                                 </div>
                                 <div class="card-music__emotion">
-                                    <i class="fa-regular fa-heart"></i>
+                                    <button onclick="emoji_love(this)"><i class="fa-regular fa-heart"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -256,7 +255,7 @@
                                     <div class="inf-desc">Hôm qua</div>
                                 </div>
                                 <div class="card-music__emotion">
-                                    <i class="fa-regular fa-heart"></i>
+                                    <button onclick="emoji_love(this)"><i class="fa-regular fa-heart"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -270,7 +269,7 @@
                                     <div class="inf-desc">Hôm qua</div>
                                 </div>
                                 <div class="card-music__emotion">
-                                    <i class="fa-regular fa-heart"></i>
+                                    <button onclick="emoji_love(this)"><i class="fa-regular fa-heart"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -283,7 +282,7 @@
                                     <div class="inf-desc">Hôm qua</div>
                                 </div>
                                 <div class="card-music__emotion">
-                                    <i class="fa-regular fa-heart"></i>
+                                    <button onclick="emoji_love(this)"><i class="fa-regular fa-heart"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -450,6 +449,12 @@
 
             $('.sideBar').classList.toggle('active')
             $('.bg-blur').classList.toggle('active')
+        }
+
+        function emoji_love(e){
+            icon = e.querySelector('i')
+            icon.classList.toggle("fa-regular")
+            icon.classList.toggle("fa-solid")
         }
     </script>
 </body>
