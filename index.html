@@ -4,315 +4,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./resource/img/icon.ico">
-    <link rel="stylesheet" href="./resource/css/grid.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>VN-Sound</title>
 
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./Logo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <style>
-        @media (min-width: 1024px) {
-            .sideBar-footer {
-                display: none;
-            }
+        .blockParrent {
+            display: flex;
+            flex-flow: row;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+        }
+
+        .box1 {
+            background-color: green;
+            color: #fff;
+            width: 30px;
+        }
+
+        .box2 {
+            background-color: #DDDDDD;
+            flex-grow: 1;
         }
     </style>
 </head>
 
-<body class="dark-mode">
+<body>
     <div id="main-web">
-        <div class="grid">
-            <div class="row no-gutters">
-                <div class="col padding-10 l-3 m-0 s-0">
-                    <div class="sideBar block">
-                        <div class="sideBar__header">
-                            <div class="header__site-Icon icon"></div>
-                            <h1 class="header__site-ID logo">
-                                <span>VN</span>-Sound
-                            </h1>
-                        </div>
-                        <div class="sideBar__redirect">
-                            <div class="redirect-header">DISCOVERY</div>
-                            <ul class="redirect-list">
-                                <li class="redirect btn">
-                                    <i class="fa-solid fa-house"></i>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li class="redirect btn">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                    <a href="#">Search</a>
-                                </li>
-                            </ul>
-                            <div class="redirect-header">YOUR LIBRARY</div>
-                            <ul class="redirect-list">
-                                <li class="redirect btn">
-                                    <i class="fa-solid fa-music"></i>
-                                    <a href="#">Musics</a>
-                                </li>
-                                <li class="redirect btn">
-                                    <i class="fa-solid fa-microphone-lines"></i>
-                                    <a href="#">Artists</a>
-                                </li>
-                                <li class="redirect btn">
-                                    <i class="fa-solid fa-book"></i>
-                                    <a href="#">Playlists</a>
-                                </li>
-                            </ul>
-                        </div>
+        <div class="sideBar">
+            <!-- Side ID -->
+            <div class="site-ID">
+                <div class="logo-btn" href="#">
+                    <div class="logo">
+                        <i class="logo-img fa-solid fa-record-vinyl"></i>
+                        <div class="logo-slider"></div>
+                        <h1 class="logo-name"><span>V</span><span>N</span>-Sound</h1>
                     </div>
                 </div>
-                <div class="col padding-10 l-9 m-12 s-12">
-                    <div class="content grid">
-                        <div class="taskBar block row no-gutters">
-                            <div class="col l-5 m-9 s-6">
-                                <div class="type-block">
-                                    <ul class="type-btn">
-                                        <li class="type btn">
-                                            <a href="#">Songs</a>
-                                        </li>
-                                        <li class="type btn">
-                                            <a href="#">Podcast</a>
-                                        </li>
-                                        <li class="type btn">
-                                            <a href="#">Books</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col l-4 m-0 s-0">
-                                <div class="search-block">
-                                    <input type="text">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </div>
-                            </div>
+            </div>
 
-                            <div class="col l-2 m-3 s-6">
-                                <div class="infUser-block">
-                                    <button>Sign Up</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-container block">
-                            <div class="welcome-block">
-                                <h1 title=">Welcome to VN-Sound" class="block__heading">Welcome to <i class="logo">
-                                        VN-<span>Sound</span></i>
-                                </h1>
-                                <div class="grid">
-                                    <div class="row no-gutters">
-                                        <div class="col padding-5 l-4 m-6 s-12">
-                                            <div class="tag">
-                                                <div class="tag-image"></div>
-                                                <div class="tag-desc">Mạch Vĩ Kiệt 21CLC01</div>
-                                                <div class="tag-icon"></div>
-                                            </div>
-                                        </div>
+            <!-- Side redirect -->
+            <div class="navBar-menu">
+                <ul class="navBar">
+                    <li class="nav">
 
-                                        <div class="col padding-5 l-4 m-6 s-12">
-                                            <div class="tag">
-                                                <div class="tag-image"></div>
-                                                <div class="tag-desc">Mạch Vĩ Kiệt</div>
-                                                <div class="tag-icon"></div>
-                                            </div>
-                                        </div>
+                        <a href="#">
+                            <i class="fa-solid fa-coins"></i>
+                            Khám Phá</a>
+                    </li>
+                    <li class="nav">
 
-                                        <div class="col padding-5 l-4 m-6 s-12">
-                                            <div class="tag">
-                                                <div class="tag-image"></div>
-                                                <div class="tag-desc">Mạch Vĩ Kiệt</div>
-                                                <div class="tag-icon"></div>
-                                            </div>
-                                        </div>
+                        <a href="#">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            #Vnchart</a>
+                    </li>
+                    <li class="nav">
 
-                                        <div class="col padding-5 l-4 m-6 s-12">
-                                            <div class="tag">
-                                                <div class="tag-image"></div>
-                                                <div class="tag-desc">Mạch Vĩ Kiệt</div>
-                                                <div class="tag-icon"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <a href="#">
+                            <i class="fa-solid fa-radio"></i>
+                            Radio</a>
+                    </li>
+                    <li class="nav">
 
-                            <div class="welcome-block">
-                                <h1 title=">Welcome to VN-Sound" class="block__heading">Welcome to
-                                    <i class="logo">VN-<span>Sound</span></i>
-                                </h1>
-                                <div class="grid">
-                                    <div class="row no-gutters">
-                                        <div class="col padding-5 l-4 m-6 s-12">
-                                            <div class="tag">
-                                                <div class="tag-image"></div>
-                                                <div class="tag-desc">Mạch Vĩ Kiệt 21CLC01</div>
-                                                <div class="tag-icon"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col padding-5 l-4 m-6 s-12">
-                                            <div class="tag">
-                                                <div class="tag-image"></div>
-                                                <div class="tag-desc">Mạch Vĩ Kiệt</div>
-                                                <div class="tag-icon"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col padding-5 l-4 m-6 s-12">
-                                            <div class="tag">
-                                                <div class="tag-image"></div>
-                                                <div class="tag-desc">Mạch Vĩ Kiệt</div>
-                                                <div class="tag-icon"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col padding-5 l-4 m-6 s-12">
-                                            <div class="tag">
-                                                <div class="tag-image"></div>
-                                                <div class="tag-desc">Mạch Vĩ Kiệt</div>
-                                                <div class="tag-icon"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="card-footer">
-                                khúc này để thông tin bla bla bla
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
+                        <a href="#">
+                            <i class="fa-solid fa-photo-film"></i>
+                            Thư viện</a>
+                    </li>
+                </ul>
             </div>
         </div>
 
-        <div class="footer">
+        <div class="content">
+            <div class="content-header">
 
-            <div class="audio-player">
-                <div class="tag">
+                <div class="content-header__toolBar toolBar-left">
+                    <div class="redirect-btn">
+                        <button><i class="fa-solid fa-angle-left"></i></button>
+                        <button><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
 
-                    <!-- tag music  -->
-                    <div class="audio-inf">
-                        <div class="tag-image"></div>
-                        <div class="tag-inf">
-                            <div class="tag-desc">Mạch Vĩ Kiệt 21CLC01</div>
-                            <div class="tag-artist">aaaaaaaaaaaaaaa</div>
+                    <div class="search-block">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="text" placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát....">
+                    </div>
+                </div>
+
+                <div class="content-header__toolBar  toolBar-right">
+                    <div class="download-block">
+                        <button>
+                            <i class="fa-solid fa-download"></i>
+                            Get app
+                        </button>
+                    </div>
+
+                    <div class="setting-block">
+                        <button>
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                    </div>
+
+                    <div class="user-block">
+                        <div class="user-img"></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="content-container">
+                <div class="slider">
+                    <!-- <div class="slider-control"> -->
+                    <button class=""><i class="fa-solid fa-angle-left"></i></button>
+                    <button><i class="fa-solid fa-angle-right"></i></button>
+                    <!-- </div> -->
+
+                    <div class="poster">
+                        <img src="https://photo-zmp3.zmdcdn.me/banner/e/1/b/c/e1bc5206d8d56365a7278ea73d8893f9.jpg"
+                            alt="">
+                    </div>
+                    <div class="poster">
+                        <img src="https://photo-zmp3.zmdcdn.me/banner/c/4/b/0/c4b0246e3615e373ca1847a962fec2d9.jpg"
+                            alt="">
+                    </div>
+                    <div class="poster">
+                        <img src="https://photo-zmp3.zmdcdn.me/banner/f/d/f/0/fdf047080affa60db3e038b53b95563d.jpg"
+                            alt="">
+                    </div>
+                </div>
+
+                <div class="block new-publish">
+                    <div class="block-title">Mới Phát Hành</div>
+                    <div class="block-btn">
+                        <div class="filter">
+                            <button class="active">TẤT CẢ</button>
+                            <button>VIỆT NAM</button>
+                            <button>QUỐC TẾ</button>
+                        </div>
+                        <a class="getAll">
+                            Tất cả
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
+                    <div class="block-media row">
+                        <div class="col xl-4">
+                            <div class="card-music">
+                                <div class="card-music__img"></div>
+                                <div class="card-music__inf">
+                                    <a class="inf-title">Úm Ba La</a>
+                                    <a class="inf-artist">Yuno Bigboi</a>
+                                    <div class="inf-desc">Hôm qua</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col xl-4">
+                            <div class="card-music">
+                                <div class="card-music__img"></div>
+                                <div class="card-music__inf">
+                                    <a class="inf-title">Vroom Vroom</a>
+                                    <a class="inf-artist">TEMPEST</a>
+                                    <div class="inf-desc">Hôm qua</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col xl-4">
+                            <div class="card-music">
+                                <div class="card-music__img"></div>
+                                <div class="card-music__inf">
+                                    <a class="inf-title">Got Me Started</a>
+                                    <a class="inf-artist">Troye Sivan</a>
+                                    <div class="inf-desc">Hôm qua</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col xl-4">
+                            <div class="card-music">
+                                <div class="card-music__img"></div>
+                                <div class="card-music__inf">
+                                    <a class="inf-title">Got Me Started</a>
+                                    <a class="inf-artist">Troye Sivan</a>
+                                    <div class="inf-desc">Hôm qua</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col xl-4">
+                            <div class="card-music">
+                                <div class="card-music__img"></div>
+                                <div class="card-music__inf">
+                                    <a class="inf-title">Got Me Started</a>
+                                    <a class="inf-artist">Troye Sivan</a>
+                                    <div class="inf-desc">Hôm qua</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col xl-4">
+                            <div class="card-music">
+                                <div class="card-music__img"></div>
+                                <div class="card-music__inf">
+                                    <a class="inf-title">Got Me Started</a>
+                                    <a class="inf-artist">Troye Sivan</a>
+                                    <div class="inf-desc">Hôm qua</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col xl-4">
+                            <div class="card-music">
+                                <div class="card-music__img"></div>
+                                <div class="card-music__inf">
+                                    <a class="inf-title">Got Me Started</a>
+                                    <a class="inf-artist">Troye Sivan</a>
+                                    <div class="inf-desc">Hôm qua</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!--  -->
+                </div>
 
-                    <!-- PLayer -->
-                    <div class="audio-setting">
-                        <button class="btn">
-                            <i class="fa-solid fa-backward"></i>
-                        </button>
-                        <button class="play-pause btn">
-                            <i class="fa-solid fa-play"></i>
-                        </button>
-                        <button class="btn">
-                            <i class="fa-solid fa-forward"></i>
-                        </button>
-                    </div>
-                    <!--  -->
-
-                    <button class="play-pause btn">
-                        <i class="fa-solid fa-play"></i>
-                    </button>
-
-                    <div class="tag-btn">
-                        <button class="tag-like btn">
-                            <!-- <i class="fa-regular fa-heart"></i> -->
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-
-                        <button class="tag-close btn">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
+                <div class="album">
+                    <div class="block">
+                        <div class="block-btn">
+                            <div class="block-title">Chill</div>
+                            <a class="getAll">
+                                Tất cả
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
                     </div>
 
-                </div>
-                <input type="range" min="0" max="100">
-                <audio src="#" hidden></audio>
-            </div>
+                    <div class="block">
+                        <div class="block-btn">
+                            <div class="block-title">Một Chút Yêu Đời</div>
+                            <a class="getAll">
+                                Tất cả
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
 
-            <div class="sideBar-footer">
-                <div class="footer__redirect btn">
-                    <a href="#">
-                        <i class="fa-solid fa-book"></i>
-                    </a>
-                </div>
+                    <div class="block">
+                        <div class="block-btn">
+                            <div class="block-title">Tâm Trạng Tan Chậm</div>
+                            <a class="getAll">
+                                Tất cả
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
 
-                <div class="footer__redirect btn">
-                    <a href="#">
-                        <i class="fa-solid fa-music"></i>
-                    </a>
-                </div>
+                    <div class="block">
+                        <div class="block-btn">
+                            <div class="block-title">Chill</div>
+                            <a class="getAll">
+                                Tất cả
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
 
-                <div class="footer__redirect btn">
-                    <a href="#">
-                        <i class="fa-solid fa-house"></i>
-                    </a>
-                </div>
 
-                <div class="footer__redirect btn">
-                    <a href="#">
-                        <i class="fa-solid fa-microphone-lines"></i>
-                    </a>
-                </div>
 
-                <div class="footer__redirect btn">
-                    <a href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
                 </div>
 
             </div>
-
         </div>
+
+
     </div>
-
-    <script>
-        $ = document.querySelector.bind(document)
-        $$ = document.querySelectorAll.bind(document)
-
-        $$('.footer__redirect').forEach((btn) => {
-            btn.onmouseover = () => {
-                btn.classList.toggle("active")
-            }
-        })
-
-        $$('.card-container .tag').forEach((btn) => {
-            btn.onclick = () => {
-                // hiển thị đúng playlist cần
-                $('.audio-player').style.display = "block"
-            }
-        })
-
-        $('.tag-close').onclick = () => {
-            $('.audio-player').style.display = "none"
-        }
-
-        $('.tag-like').onclick = (e) => {
-            e.target.classList.toggle('fa-solid');
-            e.target.classList.toggle('fa-regular');
-        }
-
-        $$('.play-pause i').forEach((btn) => {
-            btn.onclick = (e) => {
-                e.target.classList.toggle('fa-pause')
-                e.target.classList.toggle('fa-play')
-            }
-        })
-
-        $('.infUser-block button').onclick = () => {
-            $('body').classList.toggle('dark-mode')
-        }
-
-
-    </script>
 </body>
 
 </html>
