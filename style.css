@@ -227,9 +227,6 @@
 
 }
 
-.toolBar-right .user-block {}
-
-
 .toolBar-right .user-block .user-img {
     width: 40px;
     height: 40px;
@@ -254,7 +251,7 @@
 }
 
 .content-container .slider {
-    height: 200px;
+    /* height: 200px; */
     width: 100%;
     /* background-color: #fff; */
 
@@ -268,8 +265,6 @@
 }
 
 .content-container .slider .poster {
-    flex: 0 0 calc(100%/3);
-    max-width: calc(100%/3);
 
     height: 100%;
     padding: 0 12px;
@@ -353,6 +348,7 @@
 
 .content .block-btn {
     display: flex;
+    flex-flow: row;
     align-items: center;
     width: fit-content;
     margin-bottom: 20px;
@@ -394,16 +390,32 @@ button:active {
 
 .card-music {
     display: flex;
+    flex-flow: row;
     align-items: center;
     padding: 10px;
     width: 100%;
+
+    padding-right: 50px;
+
+    border: 0.2px solid #ffffff06;
+    border-radius: 10px;
 }
 
 .card-music__img {
     width: 60px;
     height: 60px;
     border-radius: 10%;
-    background-color: #fff;
+    background-color: var(--color-text);
+}
+
+.card-music__emotion{
+    flex-grow: 1;
+    display:flex;
+    justify-content: end;
+}
+
+.card-music__emotion i{
+    display: block;
 
 }
 
@@ -462,6 +474,7 @@ button:active {
 
 .row {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -499,6 +512,8 @@ button:active {
 }
 
 
+
+
 @keyframes FadeIn {
     from {
         opacity: 0.5;
@@ -513,7 +528,7 @@ button:active {
 
 .siderBar-icon {
     width: fit-content;
-    position: absolute;
+    /* position: absolute; */
     z-index: 1;
 
     display: flex;
@@ -521,19 +536,26 @@ button:active {
 
     justify-content: space-between;
     padding: var(--height-header) 0;
+
+    padding-left: 20px;
     /* background-color: #000; */
+
+    display: none;
+
+    background-color: var(--background-sideBar);
 }
 
 .siderBar-icon a {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
 }
 
 .siderBar-icon label {
     background-color: transparent;
     color: var(--color-text);
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
     font-size: 18px;
     margin-top: 18px;
     border: none;
@@ -559,6 +581,24 @@ button:active {
     .bg-blur.active {
         display: block;
     }
+
+    .content-container{
+        padding-right: 20px;
+    }
+
+    .siderBar-icon{
+        display: block;
+    }
+
+    .content-container{
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .content-header{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
 
 @media (max-width : 1024px) {
@@ -579,6 +619,8 @@ button:active {
     .download-block {
         display: none;
     }
+
+    
 }
 
 @media (max-width : 780px) {
@@ -614,6 +656,21 @@ button:active {
         width: 180px;
         height: 180px;
     }
+
+    .content-container .slider{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .content-container .slider .poster{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .filter{
+        display: none;
+    }
+    
 }
 
 
@@ -641,6 +698,11 @@ button:active {
         max-width: calc((100%/3));
     }
 
+    .content-container .slider{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     .toolBar-left {
         width: fit-content;
         min-width: fit-content;
@@ -653,5 +715,23 @@ button:active {
     .toolBar-right {
         width: 40%;
         max-width: 100px;
+    }
+
+    
+}
+
+@media (max-width: 420px) {
+    .card-album {
+        display: block;
+        width: 130px;
+    }
+    .card-album__img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .content-container{
+        padding-right: 5px;
+        padding-left: 5px;
     }
 }
