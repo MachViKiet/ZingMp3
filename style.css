@@ -479,6 +479,14 @@ button:active{
     max-width: calc((100%/4));
 }
 
+.content .footer{
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 @keyframes FadeIn {
     from {
