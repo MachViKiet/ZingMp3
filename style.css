@@ -11,6 +11,7 @@
     --background-sideBar: rgb(35, 27, 46);
     --background-color-button: rgb(48, 41, 56);
     --background-color-button-2: #9b4de0;
+    --background-color-player : rgba(19,12,28,255);
 
     --color-logo: #fff;
     --color-logo-1: rgb(244, 113, 162);
@@ -40,6 +41,11 @@
     height: 100%;
     min-width: 240px;
     background-color: var(--background-sideBar);
+    border-right: 1px solid #fafafa58;
+}
+
+.padding-10 {
+    padding: 10px !important;
 }
 
 .site-ID {
@@ -289,6 +295,8 @@
 
     border-radius: 10px;
     box-shadow: 1px 1px 1px #ffffff79;
+
+    cursor: pointer;
 }
 
 .slider .poster img:hover {
@@ -400,9 +408,20 @@ button:active {
 
     border: 0.2px solid #ffffff06;
     border-radius: 10px;
+    cursor: pointer;
 }
 
-.fa-solid.fa-heart{
+.card-music:hover{
+    background-color: var(--background-color-button) !important;
+}
+
+.card-music:active{
+    background-color: var(--background-color-button) !important;
+    transform: scale(0.98,0.98);
+}
+
+
+.fa-solid.fa-heart {
     color: red;
 }
 
@@ -411,17 +430,24 @@ button:active {
     height: 60px;
     border-radius: 10%;
     background-color: var(--color-text);
+
+    cursor: pointer;
 }
 
-.card-music__emotion{
+audio{
+    display: none;
+}
+
+.card-music__emotion {
     flex-grow: 1;
-    display:flex;
+    display: flex;
     justify-content: end;
 
     padding: 0;
+    
 }
 
-.card-music__emotion i{
+.card-music__emotion i {
     display: block;
 
 }
@@ -450,11 +476,13 @@ button:active {
 .card-album {
     display: block;
     width: 210px;
+    position: relative;
 }
 
 
 .card-album__img {
     width: 210px;
+    max-width: 100%;
     height: 210px;
     background-color: #fff;
     border-radius: 8%;
@@ -486,7 +514,13 @@ button:active {
     flex-wrap: wrap;
 }
 
-.col {}
+.col {
+    display: block;
+}
+
+.col.xl-0{
+    display: none;
+}
 
 .col.xl-4 {
     flex: 0 0 calc((100%/3));
@@ -519,6 +553,11 @@ button:active {
 }
 
 
+.nav a:hover {
+    background-color: var(--background-color-button);
+    border-right: 2px solid var(--background-color-button-2);
+}
+
 
 
 @keyframes FadeIn {
@@ -550,6 +589,7 @@ button:active {
     display: none;
 
     background-color: var(--background-sideBar);
+    border-right: 1px solid #fafafa58;
 }
 
 .siderBar-icon a {
@@ -567,7 +607,109 @@ button:active {
     margin-top: 18px;
     border: none;
     border-radius: 50%;
+
+    position: absolute;
+    top: 10px;
 }
+
+.no-flex{
+    flex: none !important;
+}
+
+.player-block{
+    width: 100%;
+    height: 90px;
+    background-color: var(--background-color-player);
+
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    
+    border-top: 1px solid #ffffff53;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.player-block .card-music{
+    min-width: fit-content;
+    width: 30%;
+}
+
+.player-block .card-music .inf-title{
+    color: var(--color-text);
+}
+
+.player-block .card-music button{
+    background-color: transparent;
+    border: none;
+    color: var(--color-text);
+}
+
+.player-block .player-control{
+    width: 40%;
+    padding: 0 20px;
+}
+
+
+
+.player-block .player-control .action{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 248px;
+    width: 100%;
+}
+
+.player-block .player-control .action button{
+    background-color: transparent;
+    color: var(--color-text);
+    font-size: 24px;
+}
+
+.player-block .player-control .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.slider-thumb{
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    padding-top: 10px;
+}
+
+.slider-thumb .time-start,
+.slider-thumb .time-end{
+    color: var(--color-text);
+    padding: 0 10px;
+}
+
+.slider-thumb input{
+    flex-grow: 1;
+}
+
+
+
+.player-block .icon{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 50px;
+}
+
+.player-block .icon button{
+    background-color: transparent;
+    border: none;
+    color: var(--color-text);
+    font-size: 20px;
+}
+
 
 
 @media (max-width: 1470px) {
@@ -589,23 +731,25 @@ button:active {
         display: block;
     }
 
-    .content-container{
+    .content-container {
         padding-right: 20px;
     }
 
-    .siderBar-icon{
+    .siderBar-icon {
         display: block;
     }
 
-    .content-container{
+    .content-container {
         padding-right: 40px;
         padding-left: 40px;
     }
 
-    .content-header{
-        padding-left: 5px;
-        padding-right: 5px;
+    .content-header {
+        padding-left: 40px;
+        padding-right: 40px;
     }
+
+
 }
 
 @media (max-width : 1024px) {
@@ -627,7 +771,15 @@ button:active {
         display: none;
     }
 
-    
+    .player-block .icon{
+        display: none;
+    }
+
+    .player-block .player-control{
+        width: 60%;
+    }
+
+
 }
 
 @media (max-width : 780px) {
@@ -643,6 +795,11 @@ button:active {
     .col.m-6 {
         flex: 0 0 calc((100%/2));
         max-width: calc((100%/2));
+    }
+
+    .col.m-4 {
+        flex: 0 0 calc((100%/3));
+        max-width: calc((100%/3));
     }
 
     .col.m-0 {
@@ -664,22 +821,27 @@ button:active {
         height: 180px;
     }
 
-    .content-container .slider{
+    .content-container .slider {
         margin-left: 0;
         margin-right: 0;
     }
 
-    .content-container .slider .poster{
+    .content-container .slider .poster {
         padding-left: 5px;
         padding-right: 5px;
     }
 
-    .filter{
+    .filter {
         display: none;
     }
-    
-}
 
+    .content-header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+}
 
 @media (max-width: 540px) {
     .col.s-0 {
@@ -705,7 +867,7 @@ button:active {
         max-width: calc((100%/3));
     }
 
-    .content-container .slider{
+    .content-container .slider {
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -724,20 +886,51 @@ button:active {
         max-width: 100px;
     }
 
-    
+    .card-music{
+        padding-right: 0;
+    }
+
+
 }
 
 @media (max-width: 420px) {
+    .col.ss-0 {
+        display: none;
+    }
+
+    .col.ss-12 {
+        flex: 0 0 calc((100%/1));
+        max-width: calc((100%/1));
+        display: block;
+    }
+
+    .col.ss-6 {
+        flex: 0 0 calc((100%/2));
+        max-width: calc((100%/2));
+        display: block;
+    }
+
+    .col.ss-0 {
+        display: none;
+    }
+
+    .col.ss-4 {
+        flex: 0 0 calc((100%/3));
+        max-width: calc((100%/3));
+        display: block;
+    }
+
     .card-album {
         display: block;
         width: 130px;
     }
+
     .card-album__img {
         width: 130px;
         height: 130px;
     }
 
-    .content-container{
+    .content-container {
         padding-right: 5px;
         padding-left: 5px;
     }
