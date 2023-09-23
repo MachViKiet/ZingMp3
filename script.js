@@ -117,16 +117,22 @@ function app(config) {
                         style = '
                             background : ${img}
                         '
-                    ></div>
+                    >
+                    </div>
                     <div class="card-music__inf">
                         <a class="inf-title">${songs}</a>
                         <a class="inf-artist">${artist}</a>
                         
                     </div>
+
                     <div class="card-music__emotion">
                         <button onclick="emoji_love(this)"><i class="fa-regular fa-heart"></i></button>
                     </div>
                 </div>
+
+                <div class="action">
+                <button class="play"><i class="fa-solid fa-pause"></i></button>
+                           </div>
     
                 <div class="player-control">
                     <div class="btn">
