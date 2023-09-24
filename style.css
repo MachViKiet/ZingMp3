@@ -275,9 +275,36 @@
 
     height: 100%;
     padding: 0 12px;
-
-    animation: FadeIn ease 2;
 }
+
+.moveRight {
+    animation-name: moveRight;
+    animation-duration: 1.5s;
+  }
+
+  .moveLeft {
+    animation-name: moveLeft;
+    animation-duration: 1.5s;
+  }
+
+
+@keyframes moveRight {
+    from {
+        transform: translateX(-20px);
+    } 
+    to {
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes moveLeft {
+    from {
+        transform: translateX(0);
+    } 
+    to {
+        transform: translateX(20px);
+    }
+  }
 
 .xl-4 {
     flex: 0 0 calc(100%/3);

@@ -161,19 +161,25 @@
                     <button><i class="fa-solid fa-angle-right"></i></button>
 
 
-                    <!-- <a href="#" class=" poster col xl-4 l-6 m-12">
+                    <a href="#" class=" poster col xl-4 l-6 m-12 moveRight">
                         <img src="https://photo-zmp3.zmdcdn.me/banner/e/1/b/c/e1bc5206d8d56365a7278ea73d8893f9.jpg"
                             alt="">
                     </a>
 
-                    <a href="#" class="poster col xl-4 l-6 m-0">
+
+                    <a href="#" class="poster col xl-4 l-6 m-0 moveRight">
                         <img src="https://photo-zmp3.zmdcdn.me/banner/c/4/b/0/c4b0246e3615e373ca1847a962fec2d9.jpg"
                             alt="">
                     </a>
-                    <a href="#" class="poster col xl-4 l-0 m-0">
+                    <a href="#" class="poster col xl-4 l-0 m-0 moveRight">
                         <img src="https://photo-zmp3.zmdcdn.me/banner/f/d/f/0/fdf047080affa60db3e038b53b95563d.jpg"
                             alt="">
-                    </a> -->
+                    </a>
+
+                    <a href="#" class="poster col xl-0 l-0 m-0 moveRight">
+                        <img src="https://photo-zmp3.zmdcdn.me/banner/f/d/f/0/fdf047080affa60db3e038b53b95563d.jpg"
+                            alt="">
+                    </a>
 
                 </div>
 
@@ -373,7 +379,7 @@
             <div class="action">
  <button class="play"><i class="fa-solid fa-play"></i></button>
             </div>
-            
+
             <div class="player-control">
                 <div class="btn">
                     <div class="action">
@@ -403,12 +409,16 @@
 
     <script src="./script.js"></script>
     <script>
-
+        document.querySelectorAll('.content-container a').forEach((e) => {
+            e.onmouseover = (a) => {
+                a.target.classList.toggle("moveLeft")
+            }
+        })
     </script>
 
     <script>
 
-        app = app([
+        /*app = app([
             {
                 url: './database/newsfeed.json',
                 type: 'newsfeed',
@@ -419,16 +429,16 @@
                 type: 'new music',
                 field: '.block-media'
             }
-        ])
+        ])*/
 
         $ = document.querySelector.bind(document)
         $$ = document.querySelectorAll.bind(document)
 
         $('#bg-blur').onchange = (e) => {
 
-            $('.sideBar').classList.toggle('active')
-            $('.bg-blur').classList.toggle('active')
-        }
+                $('.sideBar').classList.toggle('active')
+                $('.bg-blur').classList.toggle('active')
+            }
 
 
 
@@ -437,10 +447,10 @@
 
 
         function emoji_love(e) {
-            icon = e.querySelector('i')
-            icon.classList.toggle("fa-regular")
-            icon.classList.toggle("fa-solid")
-        }
+                icon = e.querySelector('i')
+                icon.classList.toggle("fa-regular")
+                icon.classList.toggle("fa-solid")
+            }
 
     </script>
 </body>
