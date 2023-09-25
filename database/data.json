@@ -1,8 +1,11 @@
 {
+    "title" : "Top Playlists",
     "container": [
         {
             "type": "playlist",
             "name": "I like it",
+            "image": "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/5/1/7/6/517699467b67fbf68731346b1a9ac12c.jpg",
+            "desc" : "Dưới ánh trăng,  aaaaaaaaaaaaa thời gian đứng yên chứng minh tình yêu anh",
             "container": [
                 {
                     "type": "music",
@@ -43,7 +46,9 @@
             ]
         }, {
             "type": "playlist",
-            "name": "Cho Vinh",
+            "name": "",
+            "image": "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/e/e/8/e/ee8e44e454922847a166b878af5c6e0c.jpg",
+            "desc" : "Ôn lại tuổi thơ cùng thời kỳ hoàng kim của các nhóm",
             "container": [
                 {
                     "type": "music",
@@ -66,7 +71,9 @@
             ]
         },{
             "type": "playlist",
-            "name": "Cho Nghia",
+            "name": "",
+            "image": "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/6/3/7/9/63791ecc12f7d84789ba72e2cb95b9fe.jpg",
+            "desc" : "Thư giản với những hit âu mỹ đình đám",
             "container": [
                 {
                     "type": "music",
@@ -93,6 +100,49 @@
                     "url": {
                         "audio": "https://drive.google.com/uc?export=download&id=1h_1teNMTb4kbChwRSkn5xXaA9eddUC8U",
                         "image": "https://drive.google.com/uc?export=download&id=1l-XfPGV-muOrH1M5Aaw4ondQmb30-21z"
+                    }
+                }
+            ]
+        }, {
+            "type": "playlist",
+            "name": "I like it",
+            "image": "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/5/1/7/6/517699467b67fbf68731346b1a9ac12c.jpg",
+            "desc" : "Dưới ánh trăng,  aaaaaaaaaaaaa thời gian đứng yên chứng minh tình yêu anh",
+            "container": [
+                {
+                    "type": "music",
+                    "name": "Attention",
+                    "singer": "Charlie Puth",
+                    "url": {
+                        "audio": "https://drive.google.com/uc?id=1Ghe4v_mjPbTrHi4r5vLyYI3oNWmkJUvH&export=download",
+                        "image": "https://drive.google.com/uc?export=download&id=17YA7ar7zSPc-0fn-Rm2mZIYj1TkJJFqL"
+                    }
+                },
+                {
+                    "type": "music",
+                    "name": "How Long",
+                    "singer": "Charlie Puth",
+                    "url": {
+                        "audio": "https://drive.google.com/uc?export=download&id=1patMEkEG6YHhABmoi5v2vGgaJUea7aTX",
+                        "image": "https://drive.google.com/uc?export=download&id=1kuOiBoTQyobptKUlSQyM-2ZI-fGPgYXy"
+                    }
+                },
+                {
+                    "type": "music",
+                    "name": "If We Did It Right",
+                    "singer": "Mindme",
+                    "url": {
+                        "audio": "https://drive.google.com/uc?export=download&id=1nDAbCBeafq3oxrcNC04hPTQ3fDLFYUvt",
+                        "image": "https://drive.google.com/uc?export=download&id=1q-YnNxW4GbR3j4q5PbhY7WFgMeKqxWlj"
+                    }
+                },
+                {
+                    "type": "music",
+                    "name": "Red Line",
+                    "singer": "Anna Yvette",
+                    "url": {
+                        "audio": "https://drive.google.com/uc?export=download&id=1zxF539Bk_jZRXN2El4Bpc5tUYERRydh4",
+                        "image": "https://drive.google.com/uc?export=download&id=1dNf1bsyFRfAT-x80ikDmCntz2PO957au"
                     }
                 }
             ]

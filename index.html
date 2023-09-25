@@ -4,453 +4,464 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VN-Sound</title>
+    <title>Non-title</title>
 
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./Logo.png">
-
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/lib.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-    <style>
-        .blockParrent {
-            display: flex;
-            flex-flow: row;
-            height: 500px;
-            width: 500px;
-            margin: auto;
-        }
-
-        .box1 {
-            background-color: green;
-            color: #fff;
-            width: 30px;
-        }
-
-        .box2 {
-            background-color: #DDDDDD;
-            flex-grow: 1;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,400&family=Roboto:wght@300;500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <label id="overlay" for="overlay-checkbox" class="mk-block"></label>
+
     <div id="main-web">
-        <label for="bg-blur" class="bg-blur"></label>
-        <input id="bg-blur" type="checkbox" hidden>
 
-        <div class="sideBar">
-            <!-- Side ID -->
-            <div class="site-ID">
-                <div class="logo-btn" href="#">
-                    <div class="logo">
-                        <i class="logo-img fa-solid fa-record-vinyl"></i>
-                        <div class="logo-slider"></div>
-                        <h1 class="logo-name"><span>V</span><span>N</span>-Sound</h1>
-                    </div>
+        <div class="sideBar sub_sideBar">
+            <div class="sideBar-header mk-block">
+                <i class="header-icon fa-solid fa-music"></i>
+
+                <a href="#" class="logo-block text">
+                    <span>Z</span><span>i</span><span>n</span><span>g</span><span> mp3</span>
+                </a>
+            </div>
+
+
+
+            <div class="sideBar-redirect">
+                <div class="nav-list">
+                    <a class="nav active" href="#">
+                        <i class="fa-regular fa-circle-dot"></i>
+                        <p class="nav-text text">Discovery</p>
+                    </a>
+
+                    <a class="nav" href="#">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <p class="nav-text text">#Vchart</p>
+                    </a>
+
+                    <a class="nav" href="#">
+                        <i class="fa-solid fa-radio"></i>
+                        <p class="nav-text text">Radio</p>
+                    </a>
+
+                    <a class="nav" href="#">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                        <p class="nav-text text">Library</p>
+                    </a>
                 </div>
             </div>
 
-            <!-- Side redirect -->
-            <div class="navBar-menu">
-                <ul class="navBar">
-                    <li class="nav">
-
-                        <a href="#">
-                            <i class="fa-solid fa-coins"></i>
-                            Khám Phá</a>
-                    </li>
-                    <li class="nav">
-
-                        <a href="#">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            #Vnchart</a>
-                    </li>
-                    <li class="nav">
-
-                        <a href="#">
-                            <i class="fa-solid fa-radio"></i>
-                            Radio</a>
-                    </li>
-                    <li class="nav">
-
-                        <a href="#">
-                            <i class="fa-solid fa-photo-film"></i>
-                            Thư viện</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="siderBar-icon">
-            <!-- Side redirect -->
-            <div class="navBar-menu">
-                <ul class="navBar">
-                    <li class="nav">
-
-                        <a href="#">
-                            <i class="fa-solid fa-coins"></i>
-                        </a>
-                    </li>
-                    <li class="nav">
-
-                        <a href="#">
-                            <i class="fa-solid fa-chart-simple"></i>
-                        </a>
-                    </li>
-                    <li class="nav">
-
-                        <a href="#">
-                            <i class="fa-solid fa-radio"></i>
-                        </a>
-                    </li>
-                    <li class="nav">
-
-                        <a href="#">
-                            <i class="fa-solid fa-photo-film"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <label for="bg-blur">
-                <i class="fa-solid fa-right-left"></i>
+            <label for="overlay-checkbox" class="sideBar-addPlaylist mk-block">
+                <i class="addPlaylist_icon-plus fa-solid fa-plus btn"></i>
+                <i class="addPlaylist_icon-expand fa-solid fa-angle-right btn"></i>
+                <p class="addPlaylist_text text">Create new playlists</p>
             </label>
+
+            <div class="now-playing">
+                <div class="player-block mk-block">
+                    <div class="player-block_left mk-block">
+                        <!-- ------ Card music ------- -->
+                        <div class="card-music mk-block">
+                            <div class="card-music_img"></div>
+                            <div class="card-music-inf">
+                                <div class="music-inf_name">
+                                    Giấc Mơ Của Em
+                                </div>
+                                <div class="music-inf_artists">
+                                    <a href="#">MYLINA</a>
+                                    <a href="#">, fueled by boba</a>
+                                </div>
+                            </div>
+                            <div class="card-music-icon">
+                                <button>
+                                    <i class="fa-regular fa-heart btn"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-ellipsis btn"></i>
+                                </button>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="player-block_center mk-block">
+                        <!-- ------ Card music ------- -->
+                        <div class="player-control">
+                            <div class="player-control_button">
+                                <div class="button-container">
+                                    <i class="fa-solid fa-backward-step btn"></i>
+                                    <i class="fa-solid fa-circle-play btn"></i>
+                                    <!-- <i class="fa-solid fa-circle-pause btn"></i> -->
+                                    <i class="fa-solid fa-forward-step btn"></i>
+                                </div>
+                            </div>
+
+                            <div class="player-control_slider">
+                                <p class="time-start">00:00</p>
+                                <input type="range">
+                                <p class="time-end">03:12</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="player-block_right mk-block">
+                        <!-- ------ Card music ------- -->
+                        <div class="more-control mk-center-block">
+                            <div class="player-control_button">
+                                <button><i class="fa-solid fa-compact-disc btn"></i></button>
+                                <button><i class="fa-solid fa-pen btn "></i></button>
+                                <button><i class="fa-solid fa-circle-info btn "></i></button>
+                                <button><i class="fa-solid fa-list btn"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
 
-        <div class="content">
-            <div class="content-header">
+        <div class="content mk-container">
+            <div class="content-header">Đây là phần toolBar chưa kịp viết</div>
 
-                <div class="content-header__toolBar toolBar-left">
-                    <div class="redirect-btn">
-                        <button><i class="fa-solid fa-angle-left"></i></button>
-                        <button><i class="fa-solid fa-angle-right"></i></button>
-                    </div>
-
-                    <div class="search-block">
-                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <input type="text" placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát....">
-                    </div>
+            <div class="content-slider">
+                <div class="poster-content">
+                    <!-- <img src="https://photo-zmp3.zmdcdn.me/banner/e/2/9/1/e2917910851c112d22209b2aa8d6e9a9.jpg" alt="">
+                    <img src="https://photo-zmp3.zmdcdn.me/banner/e/b/5/8/eb585668066276c3f1bfe4e7cc9201c5.jpg" alt="">
+                    <img src="https://photo-zmp3.zmdcdn.me/banner/f/d/f/0/fdf047080affa60db3e038b53b95563d.jpg" alt=""> -->
                 </div>
-
-                <div class="download-block">
-                    <button>
-                        <i class="fa-solid fa-download"></i>
-                        Get app
-                    </button>
-                </div>
-
-                <div class="content-header__toolBar  toolBar-right">
-
-                    <div class="setting-block">
-                        <button>
-                            <i class="fa-solid fa-gear"></i>
-                        </button>
-                    </div>
-
-                    <div class="user-block">
-                        <div class="user-img"></div>
-                    </div>
-                </div>
-
-
             </div>
 
             <div class="content-container">
-                <div class="slider row">
 
-                    <button class=""><i class="fa-solid fa-angle-left"></i></button>
-                    <button><i class="fa-solid fa-angle-right"></i></button>
-
-
-                    <a href="#" class=" poster col xl-4 l-6 m-12 moveRight">
-                        <img src="https://photo-zmp3.zmdcdn.me/banner/e/1/b/c/e1bc5206d8d56365a7278ea73d8893f9.jpg"
-                            alt="">
-                    </a>
+                <!-- 
+                <div class="content-title">Top Hit 2023</div>
+                <div class="music-container .mk-row ">
 
 
-                    <a href="#" class="poster col xl-4 l-6 m-0 moveRight">
-                        <img src="https://photo-zmp3.zmdcdn.me/banner/c/4/b/0/c4b0246e3615e373ca1847a962fec2d9.jpg"
-                            alt="">
-                    </a>
-                    <a href="#" class="poster col xl-4 l-0 m-0 moveRight">
-                        <img src="https://photo-zmp3.zmdcdn.me/banner/f/d/f/0/fdf047080affa60db3e038b53b95563d.jpg"
-                            alt="">
-                    </a>
+                    <div class="card-music mk-block mk-col xxl-4 xl-6">
+                        <div class="card-music_img">
+                            <div class="img">
+                                <div class="img-overlay mk-center-block">
+                                    <i class="fa-solid fa-circle-play btn">
+                                        <audio src="#"></audio>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-music-inf">
+                            <div class="music-inf_name">
+                                Giấc Mơ Của Em
+                            </div>
+                            <div class="music-inf_artists">
+                                <a href="#">MYLINA</a>
+                                <a href="#">, fueled by boba</a>
+                            </div>
+                        </div>
 
-                    <a href="#" class="poster col xl-0 l-0 m-0 moveRight">
-                        <img src="https://photo-zmp3.zmdcdn.me/banner/f/d/f/0/fdf047080affa60db3e038b53b95563d.jpg"
-                            alt="">
-                    </a>
+                        <div class="premium">
+                            Premium
+                        </div>
+                    </div>
+
+
+                    <div class="card-music mk-block mk-col xxl-4 xl-6">
+                        <div class="card-music_img">
+                            <div class="img">
+                                <div class="img-overlay mk-center-block">
+                                    <i class="fa-solid fa-circle-play btn">
+                                        <audio src="#"></audio>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-music-inf">
+                            <div class="music-inf_name">
+                                Giấc Mơ Của Em
+                            </div>
+                            <div class="music-inf_artists">
+                                <a href="#">MYLINA</a>
+                                <a href="#">, fueled by boba</a>
+                            </div>
+                        </div>
+
+                        <div class="premium">
+                            Premium
+                        </div>
+                    </div>
+
+                    <div class="card-music mk-block mk-col xxl-4 xl-6">
+                        <div class="card-music_img">
+                            <div class="img">
+                                <div class="img-overlay mk-center-block">
+                                    <i class="fa-solid fa-circle-play btn">
+                                        <audio src="#"></audio>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-music-inf">
+                            <div class="music-inf_name">
+                                Giấc Mơ Của Em
+                            </div>
+                            <div class="music-inf_artists">
+                                <a href="#">MYLINA</a>
+                                <a href="#">, fueled by boba</a>
+                            </div>
+                        </div>
+                        <div class="premium">
+                            Premium
+                        </div>
+                    </div>
+
+                    <div class="card-music mk-block mk-col xxl-4 xl-6">
+                        <div class="card-music_img">
+                            <div class="img">
+                                <div class="img-overlay mk-center-block">
+                                    <i class="fa-solid fa-circle-play btn">
+                                        <audio src="#"></audio>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-music-inf">
+                            <div class="music-inf_name">
+                                Giấc Mơ Của Em
+                            </div>
+                            <div class="music-inf_artists">
+                                <a href="#">MYLINA</a>
+                                <a href="#">, fueled by boba</a>
+                            </div>
+                        </div>
+
+                        <div class="premium">
+                            Premium
+                        </div>
+                    </div>
 
                 </div>
 
-                <div class="block new-publish">
-                    <div class="block-title">Mới Phát Hành</div>
-                    <div class="block-btn">
-                        <div class="filter">
-                            <button class="active">TẤT CẢ</button>
-                            <button>VIỆT NAM</button>
-                            <button>QUỐC TẾ</button>
-                        </div>
-                        <a class="getAll">
-                            Tất cả
-                            <i class="fa-solid fa-angle-right"></i>
-                        </a>
-                    </div>
-                    <div class="block-media row">
-                        <!-- <div class="col xl-4 l-6 m-12">
-                            <div class="card-music">
-                                <div class="card-music__img"></div>
-                                <div class="card-music__inf">
-                                    <a class="inf-title">Úm Ba La</a>
-                                    <a class="inf-artist">Yuno Bigboi</a>
-                                    <div class="inf-desc">Hôm qua</div>
-                                </div>
-                                <div class="card-music__emotion">
-                                    <button onclick="emoji_love(this)"><i class="fa-solid fa-heart"></i></button>
+                <div class="content-title">Your Favorite Musics</div>
+                <div class="music-container .mk-row ">
+
+                    <div class="card-music mk-block mk-col xxl-4 xl-6">
+                        <div class="card-music_img">
+                            <div class="img">
+                                <div class="img-overlay mk-center-block">
+                                    <i class="fa-solid fa-circle-play btn">
+                                        <audio src="#"></audio>
+                                    </i>
                                 </div>
                             </div>
-                            <audio
-                                src="https://drive.google.com/uc?export=download&id=1nDAbCBeafq3oxrcNC04hPTQ3fDLFYUvt"></audio>
-                        </div> -->
+                        </div>
+                        <div class="card-music-inf">
+                            <div class="music-inf_name">
+                                Giấc Mơ Của Em
+                            </div>
+                            <div class="music-inf_artists">
+                                <a href="#">MYLINA</a>
+                                <a href="#">, fueled by boba</a>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="card-music mk-block mk-col xxl-4 xl-6">
+                        <div class="card-music_img">
+                            <div class="img">
+                                <div class="img-overlay mk-center-block">
+                                    <i class="fa-solid fa-circle-play btn">
+                                        <audio src="#"></audio>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-music-inf">
+                            <div class="music-inf_name">
+                                Giấc Mơ Của Em
+                            </div>
+                            <div class="music-inf_artists">
+                                <a href="#">MYLINA</a>
+                                <a href="#">, fueled by boba</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-music mk-block mk-col xxl-4 xl-6">
+                        <div class="card-music_img">
+                            <div class="img">
+                                <div class="img-overlay mk-center-block">
+                                    <i class="fa-solid fa-circle-play btn">
+                                        <audio src="#"></audio>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-music-inf">
+                            <div class="music-inf_name">
+                                Giấc Mơ Của Em
+                            </div>
+                            <div class="music-inf_artists">
+                                <a href="#">MYLINA</a>
+                                <a href="#">, fueled by boba</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-music mk-block mk-col xxl-4 xl-6">
+                        <div class="card-music_img">
+                            <div class="img">
+                                <div class="img-overlay mk-center-block">
+                                    <i class="fa-solid fa-circle-play btn">
+                                        <audio src="#"></audio>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-music-inf">
+                            <div class="music-inf_name">
+                                Giấc Mơ Của Em
+                            </div>
+                            <div class="music-inf_artists">
+                                <a href="#">MYLINA</a>
+                                <a href="#">, fueled by boba</a>
+                            </div>
+                        </div>
+
+                        <div class="premium">
+                            Premium
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="album">
-                    <div class="block">
-                        <div class="block-btn">
-                            <div class="block-title">Chill</div>
-                            <a class="getAll">
-                                Tất cả
-                                <i class="fa-solid fa-angle-right"></i>
-                            </a>
-                        </div>
+                <div class="content-title">Top PLaylists</div>
+                <div class="music-container .mk-row ">
 
-                        <div class="block-media row">
-                            <div class="col no-flex xl-3 l-4 m-6 s-12 ss-6 padding-10">
-                                <div class="card-album">
-                                    <div class="card-album__img"></div>
-                                    <div class="card-album__inf">
-                                        <!-- <a class="inf-title">Úm Ba La</a>
-                                        <a class="inf-artist">Yuno Bigboi</a> -->
-                                        <div class="inf-desc">Nhạc Việt "lâu phai" và gây nghiện hoài hoài</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col no-flex xl-3 l-4 m-6 s-0 ss-6 padding-10">
-                                <div class="card-album">
-                                    <div class="card-album__img"></div>
-                                    <div class="card-album__inf">
-                                        <!-- <a class="inf-title">Úm Ba La</a>
-                                        <a class="inf-artist">Yuno Bigboi</a> -->
-                                        <div class="inf-desc">Nhạc Việt "lâu phai" và gây nghiện hoài hoài</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col no-flex xl-3 l-4 m-0 s-0 ss-0 padding-10">
-                                <div class="card-album">
-                                    <div class="card-album__img"></div>
-                                    <div class="card-album__inf">
-                                        <!-- <a class="inf-title">Úm Ba La</a>
-                                        <a class="inf-artist">Yuno Bigboi</a> -->
-                                        <div class="inf-desc">Nhạc Việt "lâu phai" và gây nghiện hoài hoài</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col no-flex xl-3 l-0 s-0 ss-0 padding-10">
-                                <div class="card-album">
-                                    <div class="card-album__img"></div>
-                                    <div class="card-album__inf">
-                                        <!-- <a class="inf-title">Úm Ba La</a>
-                                        <a class="inf-artist">Yuno Bigboi</a> -->
-                                        <div class="inf-desc">Nhạc Việt "lâu phai" và gây nghiện hoài hoài</div>
-                                    </div>
+                    <div class="card-ablum mk-block mk-col xxl-3 xl-4">
+                        <div class="card-music_img">
+                            <div class="img">
+                                <div class="img-overlay mk-center-block">
+                                    <i class="fa-solid fa-circle-play btn">
+                                        <audio src="#"></audio>
+                                    </i>
                                 </div>
                             </div>
                         </div>
-
+                        <div class="card-music-inf">
+                            <div class="music-inf_artists">
+                                <a href="#">Dưới ánh trăng, thời gian đứng yên chứng minh tình yêu anh </a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="block">
-                        <div class="block-btn">
-                            <div class="block-title">Một Chút Yêu Đời</div>
-                            <a class="getAll">
-                                Tất cả
-                                <i class="fa-solid fa-angle-right"></i>
-                            </a>
-                        </div>
-
-                        <div class="block-media row">
-                            <div class="col no-flex  xl-3 l-4 m-6 padding-10">
-                                <div class="card-album">
-                                    <div class="card-album__img"></div>
-                                    <div class="card-album__inf">
-                                        <!-- <a class="inf-title">Úm Ba La</a>
-                                        <a class="inf-artist">Yuno Bigboi</a> -->
-                                        <div class="inf-desc">Nhạc Việt "lâu phai" và gây nghiện hoài hoài</div>
-                                    </div>
+                    <div class="card-ablum mk-block mk-col xxl-3 xl-4">
+                        <div class="card-music_img">
+                            <div class="img">
+                                <div class="img-overlay mk-center-block">
+                                    <i class="fa-solid fa-circle-play btn">
+                                        <audio src="#"></audio>
+                                    </i>
                                 </div>
                             </div>
-
-                            <div class="col no-flex  xl-3 l-0 padding-10">
-                                <div class="card-album">
-                                    <div class="card-album__img"></div>
-                                    <div class="card-album__inf">
-                                        <!-- <a class="inf-title">Úm Ba La</a>
-                                        <a class="inf-artist">Yuno Bigboi</a> -->
-                                        <div class="inf-desc">Nhạc Việt "lâu phai" và gây nghiện hoài hoài</div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-
+                        <div class="card-music-inf">
+                            <div class="music-inf_artists">
+                                <a href="#">Dưới ánh trăng, thời gian đứng yên chứng minh tình yêu anh </a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="block">
-                        <div class="block-btn">
-                            <div class="block-title">Tâm Trạng Tan Chậm</div>
-                            <a class="getAll">
-                                Tất cả
-                                <i class="fa-solid fa-angle-right"></i>
-                            </a>
+                    <div class="card-ablum mk-block mk-col xxl-3 xl-4">
+                        <div class="card-music_img">
+                            <div class="img">
+                                <div class="img-overlay mk-center-block">
+                                    <i class="fa-solid fa-circle-play btn">
+                                        <audio src="#"></audio>
+                                    </i>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="block-media row">
-                            <div class="col no-flex  xl-3 l-4 m-6 padding-10">
-                                <div class="card-album">
-                                    <div class="card-album__img"></div>
-                                    <div class="card-album__inf">
-                                        <!-- <a class="inf-title">Úm Ba La</a>
-                                        <a class="inf-artist">Yuno Bigboi</a> -->
-                                        <div class="inf-desc">Nhạc Việt "lâu phai" và gây nghiện hoài hoài</div>
-                                    </div>
-                                </div>
+                        <div class="card-music-inf">
+                            <div class="music-inf_artists">
+                                <a href="#">Dưới ánh trăng, thời gian đứng yên chứng minh tình yêu anh </a>
                             </div>
-
-                            <div class="col no-flex  xl-3 l-4 m-6 padding-10">
-                                <div class="card-album">
-                                    <div class="card-album__img"></div>
-                                    <div class="card-album__inf">
-                                        <!-- <a class="inf-title">Úm Ba La</a>
-                                        <a class="inf-artist">Yuno Bigboi</a> -->
-                                        <div class="inf-desc">Nhạc Việt "lâu phai" và gây nghiện hoài hoài</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col no-flex  xl-3 l-0 padding-10">
-                                <div class="card-album">
-                                    <div class="card-album__img"></div>
-                                    <div class="card-album__inf">
-                                        <!-- <a class="inf-title">Úm Ba La</a>
-                                        <a class="inf-artist">Yuno Bigboi</a> -->
-                                        <div class="inf-desc">Nhạc Việt "lâu phai" và gây nghiện hoài hoài</div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
+                    </div>
 
-                    </div>
-                    <div class="footer">
-                        Chưa code xong :D
-                    </div>
                 </div>
+             -->
 
             </div>
-        </div>
 
-        <div class="player-block">
-            <!-- <div class="card-music">
-                <div class="card-music__img"></div>
-                <div class="card-music__inf">
-                    <a class="inf-title">Vroom Vroom</a>
-                    <a class="inf-artist">TEMPEST</a>
-                    
-                </div>
-                <div class="card-music__emotion">
-                    <button onclick="emoji_love(this)"><i class="fa-regular fa-heart"></i></button>
-                </div>
-            </div>
-
-            <div class="action">
- <button class="play"><i class="fa-solid fa-play"></i></button>
-            </div>
-
-            <div class="player-control">
-                <div class="btn">
-                    <div class="action">
-                        <button class="backward"><i class="fa-solid fa-backward"></i></button>
-                        <button class="play"><i class="fa-solid fa-play"></i></button>
-                        <button class="forward"><i class="fa-solid fa-forward"></i></button>
-                    </div>
-                </div>
-                <div class="slider-thumb">
-                    <p class="time-start">00:00</p>
-                    <input type="range">
-                    <p class="time-end">03:34</p>
-                </div>
-
-            </div>
-
-            <div class="icon">
-                <button><i class="fa-solid fa-volume-high"></i></button>
-            </div>
-
-            <audio src="https://drive.google.com/uc?export=download&id=1patMEkEG6YHhABmoi5v2vGgaJUea7aTX"></audio> -->
-
+            <audio src="#"></audio>
         </div>
 
 
     </div>
 
-    <script src="./script.js"></script>
+
+
+
+    </div>
+
+    <input type="checkbox" id="overlay-checkbox" hidden>
+
+
+    <script src="./assets/js/script.js"></script>
     <script>
-        document.querySelectorAll('.content-container a').forEach((e) => {
-            e.onmouseover = (a) => {
-                a.target.classList.toggle("moveLeft")
-            }
-        })
-    </script>
-
-    <script>
-
-        /*app = app([
-            {
-                url: './database/newsfeed.json',
-                type: 'newsfeed',
-                field: '.slider'
-            },
-            {
-                url: './database/New_music.json',
-                type: 'new music',
-                field: '.block-media'
-            }
-        ])*/
-
         $ = document.querySelector.bind(document)
         $$ = document.querySelectorAll.bind(document)
 
-        $('#bg-blur').onchange = (e) => {
+        let myPromise = new Promise(function (myResolve, myReject) {
+            // "Producing Code" (May take some time)
+            music_app([{
+                link: './database/New_music.json',
+                type: 'music',
+            }, {
+                link: './database/newsfeed.json',
+                type: 'poster',
+            }, {
+                link: './database/data.json',
+                type: 'album',
+            },
+            ])
+            myResolve(); // when successful
+            // myReject();  // when error
+        });
 
-                $('.sideBar').classList.toggle('active')
-                $('.bg-blur').classList.toggle('active')
+        // "Consuming Code" (Must wait for a fulfilled Promise)
+        myPromise.then(
+            function () {
+
+                $('#overlay-checkbox').onchange = (e) => {
+                    $('#overlay').classList.toggle('show')
+                    $('.sideBar').classList.toggle('sub_sideBar')
+                }
+
+
+                $$('.fa-heart').forEach((btn) => {
+                    btn.onclick = () => {
+                        btn.classList.toggle('fa-regular')
+                        btn.classList.toggle('fa-solid')
+                    }
+                })
+
+            },
+            function (error) {
+
+
+
             }
+        );
 
 
 
-
-
-
-
-        function emoji_love(e) {
-                icon = e.querySelector('i')
-                icon.classList.toggle("fa-regular")
-                icon.classList.toggle("fa-solid")
-            }
 
     </script>
 </body>
